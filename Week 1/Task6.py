@@ -1,9 +1,8 @@
-Feed = input("Insert an integer:")
-value = int(Feed)
+Feed = input("Insert an integer: ")
+Value = int(Feed)
 
-Remainder = value%2
+Remainder = Value % 2
 
-print(f"Value is {value}")
-Remainder_value = {f"The remainder is {Remainder} when {value} is divided by 2"}
-print(Remainder_value)
+print(f"Value is {Value}")
+print(f"The remainder is {Remainder} when {Value} is divided by 2.")
 
