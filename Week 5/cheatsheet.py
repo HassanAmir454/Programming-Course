@@ -63,6 +63,43 @@ while True:
         print("Goodbye!")
         break
 
+def initialize():
+    print("Initializing resourses...")
+
+def process_data(data):
+    return data.upper()
+
+def save_results(results):
+    print(f"Saving results: {results}")
+
+def main():
+    initialize()
+    data = "sample data"
+    processed_data = process_data(data)
+    save_results(processed_data)
+
+main()
 
 
+def Displaymenu() -> None:
+    print("Menu")
+    print("1- View balance")
+    print("1- View balance")
+    print("1- View balance")
+    print("0- exit")
+    return None
+    
+def getUserChoice() -> int:
+    userInput = input("Enter your choice:")
+    return int(userInput)
+
+def main()-> None:
+    print("Welcomr to the app.")
+    Displaymenu()
+    choice = -1
+    while choice != 0:
+        Displaymenu()
+        choice = getUserChoice()
+    return None
+main()
 
