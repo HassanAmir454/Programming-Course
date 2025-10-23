@@ -283,9 +283,31 @@ while n < 1000:
 
 # Take a number n and print a diamond/star pattern of height n.
 n = 1
-while n < 6:
-    print("*" * n)
+while n < 10:
+    if n % 2 != 0:
+        spaces = (9 - n)//2
+        print(" " * spaces + "*" * n)
     n += 1
 
+i = n - 2
+while i > 0:
+    if i % 2 != 0:
+        spaces = (9 - i)//2
+        print(" " * spaces + "*" * i)
+    i -= 1
 # Write a program that adds even digits and multiplies odd digits of a number.
 
+n = int(input("Enter a number"))
+orignal = n
+sum_even = 0
+product_odd = 1
+while orignal > 0:
+    digit = orignal % 10
+    if digit % 2 == 0:
+        sum_even += digit
+    elif digit % 2 != 0:
+        product_odd *= digit
+    orignal = orignal // 10
+print("Sum of evens is =", sum_even)
+print("Product of adds is =", product_odd)
+    
