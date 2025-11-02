@@ -263,3 +263,198 @@ def find_max(lst):
             maximum = i
     return maximum
 print(find_max(lst))
+# Write a function that returns the maximum of three numbers.
+
+def max_of_three(a, b, c):
+    if b<a>c:
+        return f"{a} is greater than {b} and {c}"
+    elif a<b>c:
+        return f"{b} is greater than {a} and {c}"
+    elif a<c>b:
+        return f"{c} is greater than {a} and {b}"
+    else:
+        return "Any of two or three are same"
+print(max_of_three(7, 5, 6))
+
+# Write a function that checks if a number is even or odd.
+
+# Write a function that takes a string and returns it in reverse.
+
+
+def reverse(n):
+    i = len(n) - 1
+    reverse = ""
+    while i >= 0:
+        reverse += n[i]
+        i -= 1
+    return reverse
+n = input("Enter any word:")
+print(reverse(n))
+
+
+    
+
+# Write a function that counts the vowels in a string.
+v = ["a", "e", "i", "o", "u"]
+def vovel_count(sentence):
+    count = 0
+    i = len(sentence) - 1
+    while i >= 0:
+        if sentence[i] in v:
+            count += 1
+        
+        i -= 1
+    return count
+sentence = input("Enter word for finding vovel:")
+print(vovel_count(sentence))
+            
+# Write a function to check whether a number is a palindrome.
+def check_palindrome(num):
+    orignal = num
+    rev = 0
+    while num > 0:
+        digit = num % 10
+        rev = rev * 10 + digit
+        num = num // 10
+    if orignal == rev:
+        return "Number is palinmdrome"
+    else:
+        return "Number is not palindrome"
+
+num = int(input("Check palindrome num:"))
+print(check_palindrome(num))
+
+# Write a function that finds all prime numbers up to n.
+def primes(n):
+    num = 2
+    while num <= n:
+
+        i = 2 
+        isPrime = True
+    
+        while i < num:
+            if num % i == 0:
+                isPrime = False
+                break
+            i += 1
+        if isPrime:
+            print(num)
+        num += 1    
+   
+primes(17)
+# Write a function that returns the sum of all even numbers between 1 and n.
+
+# Write a function that prints a multiplication table of a given number.
+
+
+
+
+
+
+# Write a function that returns the largest number in a list.
+
+def large_num(list):
+    maximum = list[0]
+    for i in list:
+        if i > maximum:
+            maximum = i
+    return maximum
+list = [23, 56, 75, 85, 67]
+print(large_num(list))
+
+
+# Write a function that returns the second smallest element in a list.
+def second_small_num(list):
+    smallest  = float('inf')
+    sec_smallest  = float('inf')
+    for i in list:
+        if i < smallest:
+            sec_smallest = smallest
+            smallest = i
+        elif i < sec_smallest and i != smallest:
+            sec_smallest = i
+    return sec_smallest
+
+list = [23, 56, 75, 85, 67]
+print(second_small_num(list))
+
+
+# Write a function that removes duplicates from a list.
+def dup_num(list):
+    new_list = []
+    for i in list:
+        if i not in new_list:
+            new_list.append(i)
+    return new_list
+list = [23, 56, 75, 85, 67, 2, 2]
+print(dup_num(list))
+
+
+# Write a function that calculates the average of a list of numbers.
+def avg_list(list):
+    n = len(list)
+    sum = 0
+    for i in list:
+        sum += i
+    average = sum/n
+    return average
+
+list = [23, 56, 75, 85, 67]
+print(avg_list(list))
+
+# Write a function that accepts two numbers and returns both their sum and product.
+def sum_product(a, b):
+    return a + b, a * b
+
+result = sum_product(2, 3)
+print(f"sum is ", result[0])
+print(f"product is ",result[1])
+
+
+# Write a function that accepts a list of names and returns only names starting with a vowel.
+
+def names_vovel(v):
+    new_list = []
+    for i in v:
+        if i[0] in vov:
+            new_list.append(i)
+    return new_list
+        
+
+vov = ["a", "e", "i", "o", "u"]
+v = ["ahmad", "eman", "raza", "karim", "osama"]
+print(names_vovel(v))
+
+
+
+
+
+
+
+# Write a function that takes a number and returns its digits in a list.
+
+def digi_list(num):
+    new_list = []
+    while num > 0:
+        digit = num % 10
+        new_list.append(digit)
+        num = num // 10
+    new_list.reverse()
+    return new_list
+  
+
+num = int(input("enter number:"))
+print(digi_list(num))
+
+# Section 5: Challenge Zone 💥
+
+# Write a function that checks if a number is perfect (reusing your old logic but cleaner).
+
+
+# Write a function that returns all Armstrong numbers in a range.
+
+# Write a function that finds the factorial of each number in a list.
+
+# Write a function that counts how many prime numbers are in a list.
+
+# Write a function that returns the Fibonacci sequence up to n terms.
