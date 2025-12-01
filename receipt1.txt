@@ -1,0 +1,3 @@
+Subtotal: 10.0 €
+Tax (16%): 1.60 €
+Final amount: 11.60 €
